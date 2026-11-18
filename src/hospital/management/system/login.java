@@ -86,7 +86,7 @@ public class login extends JFrame implements ActionListener {
                 String user = textField.getText();
                 String pass = jPasswordField.getText();
 
-                String q="select * from login where ID='"+user+"' and PW='"+pass+"'";
+                String q="select * from login where username='"+user+"' and PW='"+pass+"'";
                 ResultSet resultSet = c.statement.executeQuery(q);
 
                 if (resultSet.next()){
